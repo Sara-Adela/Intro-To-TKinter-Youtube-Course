@@ -8,10 +8,10 @@ root.iconbitmap('c:/gui/codemy.ico')
 
 def open():
 	global my_img
-	top = Toplevel()
+	top = Toplevel() # creates a second window
 	top.title('My Second Window')
 	top.iconbitmap('c:/gui/codemy.ico')
-	my_img = ImageTk.PhotoImage(Image.open("images/aspen.png"))
+	my_img = ImageTk.PhotoImage(Image.open("images/aspen.png")) # loads picture in the second window
 	my_label = Label(top, image=my_img).pack()
 	btn2 = Button(top, text="close window", command=top.destroy).pack()
 
