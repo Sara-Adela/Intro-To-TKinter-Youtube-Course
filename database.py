@@ -164,7 +164,7 @@ def submit():
 	c = conn.cursor()
 
 	# Insert Into Table
-	c.execute("INSERT INTO addresses VALUES (:f_name, :l_name, :address, :city, :state, :zipcode)",
+	c.execute("INSERT INTO addresses VALUES (:f_name, :l_name, :address, :city, :state, :zipcode)", #dummy variables
 			{
 				'f_name': f_name.get(),
 				'l_name': l_name.get(),
